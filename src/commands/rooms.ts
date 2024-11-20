@@ -24,6 +24,8 @@ export async function execute(interaction: CommandInteraction) {
 
   const freeRooms: Room[] = [];
 
+
+
   const roomPromises = rooms[building].map(async (room) => {
     const roomid: Roomid = {
       building: building,
@@ -39,8 +41,7 @@ export async function execute(interaction: CommandInteraction) {
 
   await Promise.all(roomPromises);
 
-  // Jetzt können Sie sicher sein, dass alle Räume überprüft wurden
-  console.log(freeRooms);
+ 
 
   // convert rooms into discordJS fields array
   const fields = freeRooms.slice(0, 25).map((room) => ({
@@ -48,13 +49,14 @@ export async function execute(interaction: CommandInteraction) {
     value: `Currently Free`,
   }));
 
-  console.log(freeRooms);
+ 
 
   if (freeRooms.length === 0) {
     return interaction.reply("No rooms found.");
   }
 
+  const date = new Date();
   // create embed with fields
-  const embed = new EmbedBuilder().addFields(fields);
+  const embed = new EmbedBuilder().addFields(...fields, {name: "Current Time", value: date.getTime().toString()}).toJSON();
   return interaction.reply({ embeds: [embed] });
 }

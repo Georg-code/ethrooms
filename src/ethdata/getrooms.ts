@@ -9,7 +9,7 @@ async function getBelegungszeiten(roomId: Roomid): Promise<Belegung[]> {
   // current date in this format 2024-11-18
   const now = new Date();
   const date = now.toISOString().split("T")[0];
-  console.log(date);
+
   const url = `https://ethz.ch/bin/ethz/roominfo?path=/rooms/${roomId.building}%20${roomId.room.floor}%20${roomId.room.nr}/allocations&from=${date}&to=${date}`;
 
   try {
@@ -27,7 +27,7 @@ async function getBelegungszeiten(roomId: Roomid): Promise<Belegung[]> {
         date_from: entry.date_from,
         date_to: entry.date_to,
       }));
-    console.log(belegungszeiten);
+ 
     return belegungszeiten;
   } catch (error) {
     console.error("Error fetching or processing data:", error);

@@ -1,26 +1,23 @@
 import { getBelegungszeiten } from "./getrooms";
 import { Room, Roomid } from "./roomdata";
 
-async function isRoomFree(roomid: Roomid): Promise<boolean> {
-  const rooms = await getBelegungszeiten(roomid);
-  rooms.forEach((room) => {
-    // convert date strings to Date objects
-    const date_from = new Date(room.date_from);
-    console.log(date_from);
-    const date_to = new Date(room.date_to);
-    console.log(date_to);
+async function isRoomFree(roomId: Roomid): Promise<boolean> {
+  const belegungszeiten = await getBelegungszeiten(roomId);
 
-    // get the Date including the time
-    const now = new Date(); 
-  
+  const now = new Date();
 
-    
+  for (const belegung of belegungszeiten) {
+    const date_from = new Date(belegung.date_from);
+    const date_to = new Date(belegung.date_to);
 
-
-    if (now >= date_from && now <= date_to) {
+    if (
+      now.getTime() >= date_from.getTime() &&
+      now.getTime() <= date_to.getTime()
+    ) {
+      console.log("Room is not free " + roomId.room.floor + roomId.room.nr);
       return false;
     }
-  });
+  }
 
   return true;
 }
