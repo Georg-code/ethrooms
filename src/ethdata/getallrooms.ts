@@ -1,4 +1,4 @@
-import { Building, Room, rooms } from "./roomdata";
+import { Building, Room, rooms, RoomType } from "./roomdata";
 
 export type Root = Root2[];
 
@@ -84,7 +84,7 @@ async function getallrooms() {
       rooms[building].push({
         floor: room.floor,
         nr: room.room,
-        type: room.type,
+        type: room.type as unknown as RoomType,
       });
     });
 

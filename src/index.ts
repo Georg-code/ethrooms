@@ -9,7 +9,7 @@ const client = new Client({
 
 client.once("ready", async () => {
   console.log("Discord bot is ready! 🤖");
-  // await deployCommands({ guildId: "1272274665179709460" }); // just for dev purposes
+ // await deployCommands({ guildId: "1272274665179709460" }); // just for dev purposes
 });
 
 client.on("guildCreate", async (guild) => {
@@ -25,5 +25,14 @@ client.on("interactionCreate", async (interaction) => {
     commands[commandName as keyof typeof commands].execute(interaction);
   }
 });
+
+
+
+
+
+
+
+
+
 
 client.login(process.env.DISCORD_TOKEN);

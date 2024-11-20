@@ -1,9 +1,17 @@
 import { getallrooms } from "./getallrooms";
 
+export enum RoomType {
+  "Seminare / Kurse",
+  "Sitzungszimmer",
+  "Computer",
+  "Ausstellungsfläche",
+  "Hörsaal",
+}
+
 export interface Room {
   floor: string;
   nr: string;
-  type?: string;
+  type?: RoomType;
 }
 
 export interface Roomid {
@@ -64,6 +72,5 @@ export const rooms: Record<Building, Room[]> = {
   [Building.TUR]: [],
   [Building.ZUE]: [],
 };
-
 
 // fill in the rooms
