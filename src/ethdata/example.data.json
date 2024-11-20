@@ -1,0 +1,392 @@
+[
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T14:00:00",
+    "date_to": "2024-11-22T16:00:00",
+    "belegungsserie": {
+      "belegungsserie": "869426",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1482375",
+        "allocationTitle": "Multiscale Bone Biomechanics",
+        "veranstaltungsnummer": "376-0121-00",
+        "veranstalter": "R. Müller, X. Qin",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T13:00:00",
+    "date_to": "2024-11-22T14:00:00",
+    "belegungsserie": {
+      "belegungsserie": "869427",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1482375",
+        "allocationTitle": "Multiscale Bone Biomechanics",
+        "veranstaltungsnummer": "376-0121-00",
+        "veranstalter": "R. Müller, X. Qin",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T08:00:00",
+    "date_to": "2024-11-21T10:00:00",
+    "belegungsserie": {
+      "belegungsserie": "867206",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1480764",
+        "allocationTitle": "Mechanics III",
+        "veranstaltungsnummer": "151-0503-00",
+        "veranstalter": "D. Kochmann",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-20T14:00:00",
+    "date_to": "2024-11-20T17:00:00",
+    "belegungsserie": {
+      "belegungsserie": "867520",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1482106",
+        "allocationTitle": "Clinical and Movement Biomechanics",
+        "veranstaltungsnummer": "376-1651-00",
+        "veranstalter": "D. Ravi, S. Hosseini Nasab, R. List, weitere Dozierende",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T16:00:00",
+    "date_to": "2024-11-21T18:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866624",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1480854",
+        "allocationTitle": "Analysis III",
+        "veranstaltungsnummer": "401-0363-10",
+        "veranstalter": "A. Iozzi",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T14:00:00",
+    "date_to": "2024-11-21T16:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866652",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1482349",
+        "allocationTitle": "Ärztliche Anamnesetechnik",
+        "veranstaltungsnummer": "377-0111-00",
+        "veranstalter": "S. Markun, J. Hennemann, K. Weiss",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-18T16:00:00",
+    "date_to": "2024-11-18T18:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866770",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1481934",
+        "allocationTitle": "Halbleiter-Schaltungstechnik",
+        "veranstaltungsnummer": "227-0077-10",
+        "veranstalter": "H. Wang",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-19T10:00:00",
+    "date_to": "2024-11-19T12:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866793",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1483409",
+        "allocationTitle": "Elektrotechnik I",
+        "veranstaltungsnummer": "227-0075-00",
+        "veranstalter": "J. Leuthold",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T10:00:00",
+    "date_to": "2024-11-21T12:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866804",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1481004",
+        "allocationTitle": "Introduction to Electric Power Transmission: System & Technology",
+        "veranstaltungsnummer": "227-0122-00",
+        "veranstalter": "C. Franck, G. Hug",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-18T08:00:00",
+    "date_to": "2024-11-18T12:00:00",
+    "belegungsserie": {
+      "belegungsserie": "870156",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1483539",
+        "allocationTitle": "Angewandte Computer Architektur",
+        "veranstaltungsnummer": "227-0627-00",
+        "veranstalter": "A. Gunzinger",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T08:00:00",
+    "date_to": "2024-11-22T10:00:00",
+    "belegungsserie": {
+      "belegungsserie": "866900",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1480880",
+        "allocationTitle": "Chemie I",
+        "veranstaltungsnummer": "529-2001-02",
+        "veranstalter": "J. Cvengros, J. Buschmann, P. Funck, R. Verel",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T10:00:00",
+    "date_to": "2024-11-22T11:00:00",
+    "belegungsserie": {
+      "belegungsserie": "867004",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1480957",
+        "allocationTitle": "Lineare Algebra I",
+        "veranstaltungsnummer": "401-0171-00",
+        "veranstalter": "N. Hungerbühler",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-19T14:00:00",
+    "date_to": "2024-11-19T16:00:00",
+    "belegungsserie": {
+      "belegungsserie": "886219",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1483289",
+        "allocationTitle": "Cosmic Dust in the Solar System: From Science Case to Mission Design",
+        "veranstaltungsnummer": "402-0398-00",
+        "veranstalter": "V. Sterken",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-19T16:00:00",
+    "date_to": "2024-11-19T17:00:00",
+    "belegungsserie": {
+      "belegungsserie": "886220",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1483290",
+        "allocationTitle": "Cosmic Dust in the Solar System: From Science Case to Mission Design",
+        "veranstaltungsnummer": "402-0398-00",
+        "veranstalter": "V. Sterken",
+        "veranstaltungstyp": "Lehrveranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-18T12:00:00",
+    "date_to": "2024-11-18T14:00:00",
+    "belegungsserie": {
+      "belegungsserie": "891292",
+      "veranstaltungsort": "12997",
+      "belegungstyp": 2,
+      "veranstaltung": {
+        "veranstaltung": "1492696",
+        "allocationTitle": "Study Center zu diversen Lehrveranstaltungen (vorlesungsübergreifend)",
+        "veranstaltungsnummer": "E265409",
+        "veranstalter": "U. Koch",
+        "veranstaltungstyp": "Sonstige Veranstaltung",
+        "findetStatt": 1
+      }
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-18T00:00:00",
+    "date_to": "2024-11-18T08:00:00",
+    "belegungsserie": {
+      "belegungsserie": "766512",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-18T20:00:00",
+    "date_to": "2024-11-18T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766513",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-19T00:00:00",
+    "date_to": "2024-11-19T08:00:00",
+    "belegungsserie": {
+      "belegungsserie": "766516",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-19T20:00:00",
+    "date_to": "2024-11-19T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766517",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-20T00:00:00",
+    "date_to": "2024-11-20T08:00:00",
+    "belegungsserie": {
+      "belegungsserie": "766520",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-20T20:00:00",
+    "date_to": "2024-11-20T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766521",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T00:00:00",
+    "date_to": "2024-11-21T08:00:00",
+    "belegungsserie": {
+      "belegungsserie": "766524",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-21T20:00:00",
+    "date_to": "2024-11-21T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766525",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T00:00:00",
+    "date_to": "2024-11-22T08:00:00",
+    "belegungsserie": {
+      "belegungsserie": "766528",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-22T20:00:00",
+    "date_to": "2024-11-22T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766529",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-23T00:00:00",
+    "date_to": "2024-11-23T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766531",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  },
+  {
+    "veranstaltungsort": "12997",
+    "date_from": "2024-11-24T00:00:00",
+    "date_to": "2024-11-24T23:59:00",
+    "belegungsserie": {
+      "belegungsserie": "766533",
+      "veranstaltungsort": "11815",
+      "belegungstyp": 8
+    }
+  }
+]
