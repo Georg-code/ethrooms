@@ -17,23 +17,30 @@ export const data = new SlashCommandBuilder()
       .setDescription("The building to search for")
       .setRequired(true);
   })
+  .addIntegerOption((option) => {
+    return option
+      .setName("minimum")
+      .setDescription("min min");
+  })
+
   .setDescription("Find Rooms at ETH Zurich");
 
 export async function execute(interaction: CommandInteraction) {
   // get the building from the user input
   const building = interaction.options.get("building")?.value as Building;
+  const minmim = interaction.options.get("minimum")?.value as number;
 
   const freeRooms: Room[] = [];
 
   const allRooms = (await getallrooms()) as Record<Building, Room[]>;
-  console.log(allRooms);
+  //console.log(allRooms);
   const roomPromises = allRooms[building].map(async (room) => {
     const roomid: Roomid = {
       building: building,
       room: { floor: room.floor, nr: room.nr },
     };
 
-    const isFree = await isRoomFree(roomid);
+    const isFree = await isRoomFree(roomid, minmim);
     if (isFree) {
       freeRooms.push(room);
       console.log(`Room ${room.floor} ${room.nr} is free`);

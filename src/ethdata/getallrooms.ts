@@ -93,7 +93,7 @@ async function getallrooms() {
     console.error("Error fetching or processing data:", error);
   }
 
-  console.log(rooms);
+  //console.log(rooms);
   return rooms;
 }
 
