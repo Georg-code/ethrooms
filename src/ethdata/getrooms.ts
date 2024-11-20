@@ -6,7 +6,11 @@ type Belegung = {
 };
 
 async function getBelegungszeiten(roomId: Roomid): Promise<Belegung[]> {
-  const url = `https://ethz.ch/bin/ethz/roominfo?path=/rooms/${roomId.building}%20${roomId.room.floor}%20${roomId.room.nr}/allocations&from=2024-11-18&to=2024-11-24`;
+  // current date in this format 2024-11-18
+  const now = new Date();
+  const date = now.toISOString().split("T")[0];
+  console.log(date);
+  const url = `https://ethz.ch/bin/ethz/roominfo?path=/rooms/${roomId.building}%20${roomId.room.floor}%20${roomId.room.nr}/allocations&from=${date}&to=${date}`;
 
   try {
     const response = await fetch(url);
