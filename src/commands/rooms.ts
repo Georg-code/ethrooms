@@ -7,6 +7,7 @@ import {
 import { Building, Room, Roomid, rooms } from "../ethdata/roomdata";
 import { getBelegungszeiten } from "../ethdata/getrooms";
 import { isRoomFree } from "../ethdata/freerooms";
+import { getallrooms } from "../ethdata/getallrooms";
 
 export const data = new SlashCommandBuilder()
   .setName("rooms")
@@ -24,7 +25,9 @@ export async function execute(interaction: CommandInteraction) {
 
   const freeRooms: Room[] = [];
 
-  const roomPromises = rooms[building].map(async (room) => {
+  const allRooms = (await getallrooms()) as Record<Building, Room[]>;
+  console.log(allRooms);
+  const roomPromises = allRooms[building].map(async (room) => {
     const roomid: Roomid = {
       building: building,
       room: { floor: room.floor, nr: room.nr },
@@ -42,7 +45,7 @@ export async function execute(interaction: CommandInteraction) {
   // convert rooms into discordJS fields array
   const fields = freeRooms.slice(0, 25).map((room) => ({
     name: `${room.floor} ${room.nr}`,
-    value: `Currently Free`,
+    value: `Type: ${room.type}`,
   }));
   const date = new Date();
   if (freeRooms.length === 0) {
