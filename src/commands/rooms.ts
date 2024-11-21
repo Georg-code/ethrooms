@@ -32,23 +32,40 @@ export async function execute(interaction: CommandInteraction) {
 
   const freeRooms: Room[] = [];
 
+  let removedRequests = 0;
   const allRooms = (await getallrooms()) as Record<Building, Room[]>;
   //console.log(allRooms);
+  
+  if (allRooms[building]) {
   const roomPromises = allRooms[building].map(async (room) => {
     const roomid: Roomid = {
       building: building,
       room: { floor: room.floor, nr: room.nr },
     };
 
-    const isFree = await isRoomFree(roomid, minmim);
-    if (isFree) {
-      freeRooms.push(room);
-      console.log(`Room ${room.floor} ${room.nr} is free`);
+    if (room.type == String("Ausstellungsfläche") || room.type == String("Sitzungszimmer") || room.type == String("Computer")) {
+      removedRequests += 1;
+      console.log("Ausstellungsfläche oder Sitzungszimmer entfernt")
+    } else {
+      const isFree = await isRoomFree(roomid, minmim);
+      if (isFree) {
+        freeRooms.push(room);
+        console.log(`Room ${room.floor} ${room.nr} is free`);
+      }
     }
+   
+  
   });
 
-  await Promise.all(roomPromises);
+  // remove duplicates from the array freeRooms
+  
 
+
+  
+  await Promise.all(roomPromises);
+} else {
+  return interaction.reply("Please learn to spell first"); 
+}
   // convert rooms into discordJS fields array
   const fields = freeRooms.slice(0, 25).map((room) => ({
     name: `${room.floor} ${room.nr}`,
@@ -70,6 +87,9 @@ export async function execute(interaction: CommandInteraction) {
   // create embed with fields
   const embed = new EmbedBuilder()
     .addFields(...fields)
+    .setTitle("Free Rooms in " + building)
+    .setImage(`https://www.files.ethz.ch/webrelaunch/gebaeude/bilder/${building}.jpg`)
+    .setDescription(`Please be gentle! To get this information the bot issued ${allRooms[building].length + 2 - removedRequests} requests to ETH Servers. To reduce this number all Ausstellungsflächen, Sitzungszimmer and Computerräume are removed.`)
     .setTimestamp(date.getTime())
     .setColor("#00FF00")
     .toJSON();

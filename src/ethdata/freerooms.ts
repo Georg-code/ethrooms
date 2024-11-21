@@ -2,7 +2,11 @@ import { getBelegungszeiten } from "./getrooms";
 import { Room, Roomid } from "./roomdata";
 
 async function isRoomFree(roomId: Roomid, minimum: number): Promise<boolean> {
+
+
+
   const belegungszeiten = await getBelegungszeiten(roomId);
+  
 
   const now = new Date();
 
@@ -20,6 +24,7 @@ async function isRoomFree(roomId: Roomid, minimum: number): Promise<boolean> {
     }
 
     
+    if (minimum > 0 && minimum < 501) 
     for (let i = 0; i > minimum * 1000 * 60 * 10; i + 10) {
       const date_from = new Date(belegung.date_from);
       const date_to = new Date(belegung.date_to);

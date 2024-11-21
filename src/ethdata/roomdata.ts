@@ -11,7 +11,7 @@ export enum RoomType {
 export interface Room {
   floor: string;
   nr: string;
-  type?: RoomType;
+  type?: string;
 }
 
 export interface Roomid {

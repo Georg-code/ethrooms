@@ -84,7 +84,7 @@ async function getallrooms() {
       rooms[building].push({
         floor: room.floor,
         nr: room.room,
-        type: room.type as unknown as RoomType,
+        type: room.type,
       });
     });
 
